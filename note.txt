@@ -1,0 +1,12 @@
+
+Ref links 
+1. https://docs.nestjs.com/microservices/grpc
+2. https://levelup.gitconnected.com/nestjs-microservices-with-grpc-api-gateway-and-authentication-part-1-2-650009c03686
+
+
+add this in  nest-cli.json
+
+ "compilerOptions": {
+    "assets": ["**/*.proto"],
+    "watchAssets": true
+  }

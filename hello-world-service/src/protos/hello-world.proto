@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package hello;
+
+service HelloWorldService {
+  rpc GetHelloWorld (HelloWorldReq) returns (HelloWorld) {}
+  rpc GetCustomHello (CustomHelloById) returns (CustomHello) {}
+}
+
+message HelloWorldReq {}
+
+message HelloWorld {
+  string reply = 1;
+}
+message CustomHelloById {
+  int32 id=1;
+}
+
+message CustomHello {
+  int32 id=1;
+  string name =2;
+}
